@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100mm"
+   height="100mm"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="letter-С.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.97386896"
+     inkscape:cx="187.91029"
+     inkscape:cy="161.72607"
+     inkscape:window-width="1195"
+     inkscape:window-height="981"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Шар 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       d="m 43.911967,79.801072 c -16.240612,0 -9.465956,-23.479285 -5.568209,-32.574028 4.547371,-10.115581 15.683791,-27.098621 27.933852,-28.861887 5.753817,-0.835232 8.073905,2.320087 7.981101,7.145869 0,0.835231 0.464018,1.299249 0.928035,1.299249 0.278411,0 0.649625,-0.278411 0.742428,-0.835232 0.649625,-3.897747 -1.670463,-8.723528 -6.032227,-9.280349 -1.392053,-0.185607 -2.876909,-0.185607 -4.268961,0 -4.454568,0.556821 -9.651564,3.99055 -12.806883,7.053065 -6.867459,6.217835 -12.342865,14.384542 -16.055005,22.829661 -5.84662,13.2709 -11.13642,37.492613 11.13642,34.522901 7.609887,-1.113642 14.755756,-4.640175 20.416769,-9.837171 l 1.113642,-1.020838 C 70.082554,69.314277 69.061715,68.571849 68.13368,69.40708 61.173418,75.532111 53.099514,79.801072 43.911967,79.801072 Z"
+       id="text1"
+       style="font-size:37.1214px;font-family:Propysy;-inkscape-font-specification:'Propysy, Normal';fill:#bbbbbb;stroke-width:3.09345"
+       aria-label="С" />
+  </g>
+</svg>

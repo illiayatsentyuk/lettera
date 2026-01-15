@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100mm"
+   height="100mm"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="letter-Ь.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.97386896"
+     inkscape:cx="187.91029"
+     inkscape:cy="161.72607"
+     inkscape:window-width="1195"
+     inkscape:window-height="981"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Шар 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       d="m 53.066244,38.898959 c -4.32675,0.86535 -6.3459,4.90365 -5.1921,6.63435 0.28845,0.86535 1.7307,0.5769 1.7307,0.5769 1.7307,-1.1538 3.4614,-2.59605 6.05745,-2.59605 1.1538,0 2.596049,0.28845 4.326749,1.44225 15.86475,9.51885 -0.5769,46.728899 -17.883899,41.248349 -11.24955,-3.4614 -7.21125,-21.922199 -4.0383,-29.421899 3.17295,-8.0766 7.21125,-15.86475 12.40335,-24.518249 0.86535,-1.7307 11.249549,-17.59545 12.403349,-20.1915 1.1538,-2.8844998 -2.8845,-4.0382998 -4.6152,-0.86535 -9.518849,15.28785 -21.922199,32.306399 -27.114299,52.209449 -4.32675,15.5763 2.59605,27.979649 13.8456,27.979649 12.980249,0 21.922199,-14.422499 25.383599,-25.383599 3.4614,-12.1149 -2.59605,-29.710349 -17.306999,-27.1143 z"
+       id="text1"
+       style="font-size:115.38px;font-family:Propysy;-inkscape-font-specification:'Propysy, Normal';fill:#bbbbbb;stroke-width:9.61509"
+       aria-label="ь&#10;" />
+  </g>
+</svg>

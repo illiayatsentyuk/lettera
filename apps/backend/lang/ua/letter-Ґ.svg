@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100mm"
+   height="100mm"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="letter-Ґ.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.97386896"
+     inkscape:cx="-28.237885"
+     inkscape:cy="319.85823"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Шар 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       d="m 79.249526,18.763609 c 1.602228,-0.300418 4.305987,-1.201671 5.507658,-2.403342 0.901254,-0.901253 -0.100139,-1.802507 -1.201671,-1.101532 -2.203063,1.502089 -5.107101,2.002785 -7.710721,2.002785 -4.406127,0 -8.912393,-1.401949 -13.018102,-2.403342 -1.40195,-0.300418 -1.602228,1.201671 -2.503482,3.104317 -2.002785,4.205848 -3.90543,8.511836 -5.908215,12.717684 L 42.698701,56.215687 c -2.002785,4.305987 -3.905431,8.511836 -5.908215,12.817823 -2.303203,4.606406 -4.906823,12.01671 -10.214204,13.719077 -0.801113,0.200278 -1.702367,0.400557 -2.60362,0.400557 -1.201671,0 -2.403342,-0.300418 -3.605013,-1.001393 -1.201671,-0.700974 -1.502088,-0.901253 -2.203063,-1.30181 -1.001393,-0.600835 -1.902646,0.700975 -0.801114,1.502089 2.002785,1.802506 4.00557,2.60362 6.709329,2.60362 1.902646,0 3.705152,-0.500696 5.40752,-1.602228 3.705152,-2.203063 7.009747,-9.21281 8.812253,-13.318519 1.902646,-4.105709 3.805292,-8.211418 5.707937,-12.216988 L 55.115968,33.283799 c 1.902645,-4.105709 3.805291,-8.111279 5.707937,-12.216988 1.001392,-2.203063 1.702367,-4.205848 2.703759,-3.90543 4.606406,0.801114 11.315735,2.60362 15.721862,1.602228 z"
+       id="text1"
+       style="font-size:40.0557px;font-family:Propysy;-inkscape-font-specification:'Propysy, Normal';fill:#bbbbbb;stroke-width:3.33798"
+       aria-label="Ґ&#10;" />
+  </g>
+</svg>

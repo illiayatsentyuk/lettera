@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100mm"
+   height="100mm"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="letter-З.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.97386896"
+     inkscape:cx="187.91029"
+     inkscape:cy="161.72607"
+     inkscape:window-width="1029"
+     inkscape:window-height="981"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Шар 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       d="M 49.772852,76.70716 C 57.846459,72.258438 62.624716,61.466167 60.482739,52.568722 59.823669,49.932442 58.423145,48.12 56.034017,46.884244 53.232969,45.401336 51.50291,46.14279 54.715877,44.989418 59.741285,43.176975 67.97966,37.986799 68.968265,32.055169 70.121637,24.311097 65.590531,21.098131 58.505529,22.086736 c -4.61349,0.823837 -7.991224,3.872036 -11.039422,6.920235 -0.576686,0.576686 0.164767,1.565291 0.988605,0.906221 0.494302,-0.411919 0.823837,-0.65907 1.235756,-1.070989 3.048199,-3.048198 6.5907,-5.684478 11.039422,-5.684478 4.531106,0 8.238375,2.965815 6.837851,8.732677 -0.411919,1.730059 -1.235756,3.130582 -2.389129,4.448722 -4.531106,4.943025 -10.215584,7.579305 -16.888668,8.815061 l -1.31814,0.247151 c -0.576686,0.08238 -0.823837,0.988605 0,1.070989 0.411919,0.08238 0.906222,0.08238 1.31814,0.08238 5.190176,0 10.133201,1.647675 10.957039,7.332153 1.153372,8.56791 -1.565292,14.746691 -7.90884,20.101635 -3.460117,2.883431 -7.414537,4.366338 -11.86326,4.366338 -3.872036,0 -8.897444,-0.906221 -11.204189,-4.448722 -0.247151,-0.329535 -0.576686,-1.235756 -0.823838,-1.400524 -0.411918,-0.247151 -1.235756,0.164768 -0.988605,0.823838 1.894827,4.943024 8.155991,6.261164 12.769481,6.261164 3.048199,0 6.014014,-0.329535 10.54512,-2.883431 z"
+       id="text1"
+       style="font-size:32.9535px;font-family:Propysy;-inkscape-font-specification:'Propysy, Normal';fill:#bbbbbb;stroke-width:2.74613"
+       aria-label="З&#10;" />
+  </g>
+</svg>
