@@ -103,6 +103,15 @@ export default function UserLayout() {
               </button>
               <div className={`dropdown-menu ${isOpen ? "active" : ""}`}>
                 <button
+                    className={i18n.language === "ua" ? "active-language" : ""}
+                    onClick={() => {
+                      changeLanguage("ua");
+                      setIsOpen(false);
+                    }}
+                  >
+                  Українська 
+                </button>
+                <button
                   className={i18n.language === "en" ? "active-language" : ""}
                   onClick={() => {
                     changeLanguage("en");
@@ -120,15 +129,7 @@ export default function UserLayout() {
                 >
                   Română
                 </button>
-                <button
-                  className={i18n.language === "ua" ? "active-language" : ""}
-                  onClick={() => {
-                    changeLanguage("ua");
-                    setIsOpen(false);
-                  }}
-                >
-                  Українська
-                </button>
+
                 <button
                   className={i18n.language === "ch" ? "active-language" : ""}
                   onClick={() => {
@@ -178,7 +179,7 @@ export default function UserLayout() {
             </div>
           </div>
           <a
-            href="https://docs.google.com/document/d/1_QGVVQ16fQrDOvBIVqXN71beT0sl58If1voR6JoOXFM/edit?tab=t.0#heading=h.kmm5qfzc3f17"
+            href="https://docs.google.com/document/d/1rCVxcG4-D7zVxg4Mc-E9Cs4ZfaS8KuyTwaBcuxzsc60/edit?usp=sharing"
             target="_blank"
           >
             <img
