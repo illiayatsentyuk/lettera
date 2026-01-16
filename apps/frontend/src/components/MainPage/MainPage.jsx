@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useTranslation, Trans } from "react-i18next";
-import { LuPenTool, LuFileText, LuFileCheck, LuTimer, LuUpload } from "react-icons/lu";
+import { LuPenTool, LuFileText, LuFileCheck, LuUpload } from "react-icons/lu";
 import "./MainPage.css";
 
 export default function Main() {
@@ -10,7 +10,7 @@ export default function Main() {
   return (
     <section className="main-page">
       <h1 className="main-page-title">
-        <Trans i18nKey="MainPage.title">Pysanka</Trans>
+        <Trans i18nKey="MainPage.title">Lettera</Trans>
       </h1>
       <p className="main-page-slogan">
         <Trans i18nKey="MainPage.slogan">Застосунок, що вчить писати літери</Trans>
@@ -79,8 +79,6 @@ export default function Main() {
             <Trans i18nKey="MainPage.startButton">Почати навчання →</Trans>
           </button>
         </div>
-
-
 
         <div className="mode-card">
           <div className="mode-icon">

@@ -63,7 +63,7 @@ export default function UserLayout() {
       )}
       <nav className="navbar">
         <Link className="navbar-logo" to="/">
-          Pysanka
+          Lettera
         </Link>
         <ul className="nav-links" id="nav-links" ref={navLinksRef}>
           <Link className="nav-links-item" to="/select-language?sketch=true">
@@ -81,7 +81,6 @@ export default function UserLayout() {
               <Trans i18nKey="NavBar.list.ComparePage">Вільний режим</Trans>
             </li>
           </Link>
-
         </ul>
         <div className="languages-doc-container">
           <div
