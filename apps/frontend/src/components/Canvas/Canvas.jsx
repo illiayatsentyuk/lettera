@@ -60,7 +60,6 @@ export default function Canvas() {
   const [isLoading, setIsLoading] = useState(false);
   const canvasRef = useRef(null);
   const resultModalRef = useRef(null);
-  const [token, setToken] = useState(localStorage.getItem("token"));
   const [loading, setLoading] = useState(true);
   const [styles, setStyles] = useState({
     border: "3px solid rgb(184, 184, 184)",
@@ -130,7 +129,7 @@ export default function Canvas() {
       }
       return;
     }
-    fetch("https://letters-back.vercel.app/letter", {
+    fetch("http://localhost:3000/letter", {
       headers: {
         "Content-Type": "application/json",
       },
@@ -219,19 +218,13 @@ export default function Canvas() {
           console.error("Failed to convert SVG to PNG");
           return;
         }
-
-        // Build headers - only include Authorization if token exists
-        const headers = {
-          "Content-Type": "application/json",
-        };
-        if (token) {
-          headers.Authorization = "Bearer " + token;
-        }
-
+        
         const resp = await fetch(
-          "https://letters-back.vercel.app/sendImages",
+          "http://localhost:3000/sendImages",
           {
-            headers: headers,
+            headers: {
+              "Content-Type": "application/json",
+            },
             method: "POST",
             body: JSON.stringify({
               userImage: userPicture,
@@ -243,20 +236,15 @@ export default function Canvas() {
           },
         );
         const response = await resp.json();
-        if (response.message === "Not authenticated.") {
-          alert("Not authenticated");
-        } else if (response.message === "Token expired.") {
-          alert("Token expired");
-        }
         setResult(() => {
           const newValue = response.percents;
           setStyles(styles);
           setAdvice(response.result.advice);
           resultModalRef.current.open();
           setIsLoading(false);
-
-          // Save progress to localStorage if user is not logged in
-          if (!token && response.percents !== undefined) {
+          
+          // Save progress to localStorage
+          if (response.percents !== undefined) {
             saveProgressToLocalStorage(language, letter, response.percents);
           }
 

@@ -17,13 +17,6 @@ export default function UserLayout() {
   const searchParams = new URLSearchParams(location.search);
   const mode = location.pathname.split("/")[1];
   const sketch = searchParams.get("sketch");
-  const token = localStorage.getItem("token");
-
-  function handleLogout() {
-    localStorage.removeItem("token");
-    navigate("/");
-    window.location.reload(false);
-  }
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -88,38 +81,9 @@ export default function UserLayout() {
               <Trans i18nKey="NavBar.list.ComparePage">Вільний режим</Trans>
             </li>
           </Link>
-          <Link className="nav-links-item" to="/select-language?sketch=quick">
-            <li
-              onClick={toggleMenu}
-              className={sketch === "quick" ? "current" : ""}
-            >
-              <Trans i18nKey="NavBar.list.QuickMode">Швидкий режим</Trans>
-            </li>
-          </Link>
-          {token ? (
-            <li onClick={() => { toggleMenu(); handleLogout(); }} className="nav-links-item mobile-only auth-buttons">
-              <Trans i18nKey="NavBar.list.logout">Logout</Trans>
-            </li>
-          ) : (
-            <Link className="nav-links-item mobile-only auth-button" to="/auth">
-              <li onClick={toggleMenu} className="mobile-only">
-                <Trans i18nKey="NavBar.list.signin">Log in</Trans>
-              </li>
-            </Link>
-          )}
+
         </ul>
         <div className="languages-doc-container">
-          {token ? (
-            <button className="login-button" onClick={handleLogout}>
-              <Trans i18nKey="NavBar.list.logout">Logout</Trans>
-            </button>
-          ) : (
-            <Link to="/auth">
-              <button className="login-button">
-                <Trans i18nKey="NavBar.list.signin">Log in</Trans>
-              </button>
-            </Link>
-          )}
           <div
             className="burger-menu"
             id="burger-menu"
@@ -140,6 +104,7 @@ export default function UserLayout() {
               </button>
               <div className={`dropdown-menu ${isOpen ? "active" : ""}`}>
                 <button
+                  className={i18n.language === "en" ? "active-language" : ""}
                   onClick={() => {
                     changeLanguage("en");
                     setIsOpen(false);
@@ -148,6 +113,7 @@ export default function UserLayout() {
                   English
                 </button>
                 <button
+                  className={i18n.language === "ro" ? "active-language" : ""}
                   onClick={() => {
                     changeLanguage("ro");
                     setIsOpen(false);
@@ -156,6 +122,7 @@ export default function UserLayout() {
                   Română
                 </button>
                 <button
+                  className={i18n.language === "ua" ? "active-language" : ""}
                   onClick={() => {
                     changeLanguage("ua");
                     setIsOpen(false);
@@ -164,6 +131,7 @@ export default function UserLayout() {
                   Українська
                 </button>
                 <button
+                  className={i18n.language === "ch" ? "active-language" : ""}
                   onClick={() => {
                     changeLanguage("ch");
                     setIsOpen(false);
@@ -172,6 +140,7 @@ export default function UserLayout() {
                   中文
                 </button>
                 <button
+                  className={i18n.language === "fr" ? "active-language" : ""}
                   onClick={() => {
                     changeLanguage("fr");
                     setIsOpen(false);
@@ -180,6 +149,7 @@ export default function UserLayout() {
                   Français
                 </button>
                 <button
+                  className={i18n.language === "jp" ? "active-language" : ""}
                   onClick={() => {
                     changeLanguage("jp");
                     setIsOpen(false);
@@ -188,6 +158,7 @@ export default function UserLayout() {
                   日本語
                 </button>
                 <button
+                  className={i18n.language === "es" ? "active-language" : ""}
                   onClick={() => {
                     changeLanguage("es");
                     setIsOpen(false);
@@ -196,6 +167,7 @@ export default function UserLayout() {
                   Español
                 </button>
                 <button
+                  className={i18n.language === "de" ? "active-language" : ""}
                   onClick={() => {
                     changeLanguage("de");
                     setIsOpen(false);

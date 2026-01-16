@@ -20,11 +20,16 @@ export class AtGuard extends AuthGuard('jwt') {
       const token = request.headers.authorization?.replace('Bearer ', '');
       if (token) {
         // If token exists, try to authenticate (but don't throw error if it fails)
-        return super.canActivate(context).catch(() => {
-          // Set user to null if authentication fails
-          request.user = null;
-          return true;
-        });
+        const result = super.canActivate(context);
+        if (result instanceof Promise) {
+          return result.catch(() => {
+            // Set user to null if authentication fails
+            request.user = null;
+            return true;
+          });
+        }
+        // If result is boolean, return it
+        return result;
       }
       // No token provided, allow access without authentication
       request.user = null;

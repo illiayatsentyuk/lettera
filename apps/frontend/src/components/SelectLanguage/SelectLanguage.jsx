@@ -10,94 +10,52 @@ const STATUS = {
   NOT_DONE: null,
 };
 
-async function getResults(token) {
-  // If no token, return progress from localStorage
-  if (!token) {
-    try {
-      const progress etters\codeweek\pysanka\apps\backend> npx @nestjs/cli@10 start --watch
-Need to install the following packages:
-      [22: 19: 29] Starting compilation in watch mode...
-
-      src / app.module.ts: 10: 45 - error TS2307: Cannot find module '@nestjs/config' or its corresponding type declarations.
-
-10 import { ConfigModule, ConfigService } from '@nestjs/config';
-      ~~~~~~~~~~~~~~~~
-
-        src / common / guards / at.guard.ts: 23: 43 - error TS2339: Property 'catch' 
-does not exist on type 'boolean | Promise<boolean> | Observable<boolean>'.
-        Property 'catch' does not exist on type 'false'.
-
-23         return super.canActivate(context).catch(() => {
-          ~~~~~
-
-            src / letter / letter.service.ts: 15: 31 - error TS2307: Cannot find module '@nestjs/config' or its corresponding type declarations.
-
-15 import { ConfigService } from '@nestjs/config';
-          ~~~~~~~~~~~~~~~~
-
-            [22: 19: 34] Found 3 errors.Watching for file changes.
-= JSON.parse(localStorage.getItem('userProgress') || '{}');
-      return { progress };
-        } catch (e) {
-          console.error('Failed to load progress from localStorage:', e);
-          return { progress: {} };
-        }
-    }
-
-  // If token exists, fetch from API
-  const response = await fetch(
-      "https://letters-back.vercel.app/getUserProgress",
+async function getResults() {
+  // Always get progress from localStorage
+  try {
+    const progress = JSON.parse(localStorage.getItem('userProgress') || '{}');
+    return { progress };
+  } catch (e) {
+    console.error('Failed to load progress from localStorage:', e);
+    return { progress: {} };
+  }
+}
+async function getLetters(language) {
+  try {
+    const response = await fetch(
+      "http://localhost:3000/letters",
       {
         headers: {
-          Authorization: "Bearer " + token,
+          "Content-Type": "application/json",
         },
+        method: "POST",
+        body: JSON.stringify({
+          language: language,
+        }),
       },
     );
-    const data = await response.json();
-    if (data.message === "Not authenticated.") {
-      alert("Not authenticated");
-    } else if (data.message === "Token expired.") {
-      alert("Token expired");
-    }
-    return data;
+    const letters = await response.json();
+    return letters.letters;
+  } catch (e) {
+    console.log(e);
+    alert("Failed to get letters");
   }
-  async function getLetters(language) {
-    try {
-      const response = await fetch(
-        "https://letters-back.vercel.app/letters",
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-          method: "POST",
-          body: JSON.stringify({
-            language: language,
-          }),
-        },
-      );
-      const letters = await response.json();
-      return letters.letters;
-    } catch (e) {
-      console.log(e);
-      alert("Failed to get letters");
-    }
-  }
+}
 
-  export default function SelectLanguage() {
-    const [selectedLanguage, setSelectedLanguage] = useState("ua");
-    const [selectedLetter, setSelectedLetter] = useState(null);
-    const [currentLetters, setCurrentLetters] = useState([]);
-    const [loading, setLoading] = useState(true); // Track loading
-    const [results, setResults] = useState({});
-    const navigate = useNavigate();
-    const location = useLocation();
-    const { t, i18n } = useTranslation();
-    const [token, setToken] = useState(localStorage.getItem("token"));
-    const searchParams = new URLSearchParams(location.search);
-    let sketchOrNot = searchParams.get("sketch");
-    if (!sketchOrNot) {
-      sketchOrNot = "free";
-    }
+export default function SelectLanguage() {
+  const [selectedLanguage, setSelectedLanguage] = useState("ua");
+  const [selectedLetter, setSelectedLetter] = useState(null);
+  const [currentLetters, setCurrentLetters] = useState([]);
+  const [loading, setLoading] = useState(true); // Track loading
+  const [results, setResults] = useState({});
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { t, i18n } = useTranslation();
+  const searchParams = new URLSearchParams(location.search);
+  let sketchOrNot = searchParams.get("sketch");
+  if (!sketchOrNot) {
+    sketchOrNot = "free";
+  }
 
     useEffect(() => {
       const fetchData = async () => {
@@ -108,26 +66,24 @@ does not exist on type 'boolean | Promise<boolean> | Observable<boolean>'.
       fetchData();
     }, [selectedLanguage]);
 
-    useEffect(() => {
-      const fetchResults = async () => {
-        const data = await getResults(token);
-        setResults(data);
-      };
-      fetchResults();
-
-      // Also listen for storage changes to update progress in real-time
-      const handleStorageChange = async () => {
-        if (!token) {
-          const data = await getResults(token);
-          setResults(data);
-        }
-      };
-      window.addEventListener('storage', handleStorageChange);
-
-      return () => {
-        window.removeEventListener('storage', handleStorageChange);
-      };
-    }, [token]);
+  useEffect(() => {
+    const fetchResults = async () => {
+      const data = await getResults();
+      setResults(data);
+    };
+    fetchResults();
+    
+    // Also listen for storage changes to update progress in real-time
+    const handleStorageChange = async () => {
+      const data = await getResults();
+      setResults(data);
+    };
+    window.addEventListener('storage', handleStorageChange);
+    
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+    };
+  }, []);
 
     const handleStart = () => {
       if (sketchOrNot === "quick") {
