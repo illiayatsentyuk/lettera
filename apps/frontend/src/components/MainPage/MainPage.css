@@ -6,7 +6,7 @@
   padding: 3rem 2rem;
   min-height: calc(100vh - 80px);
   background-color: white;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .main-page-title {
@@ -21,7 +21,6 @@
 .main-page-slogan {
   font-size: 1.2rem;
   color: #4A90E2;
-  margin: -1rem 0 1rem 0;
   text-align: center;
 }
 
@@ -29,14 +28,13 @@
   font-size: 1.5rem;
   font-weight: 500;
   color: #2d3748;
-  margin: 1rem 0;
   text-align: center;
 }
 
 .mode-cards {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
   width: 100%;
   max-width: 600px;
   align-items: center;

@@ -41,10 +41,10 @@ export default function FileUploader() {
       const currentLang = localStorage.getItem('i18nextLng') || 'en';
       setUserLanguage(currentLang);
     };
-    
+
     handleLanguageChange();
     window.addEventListener('storage', handleLanguageChange);
-    
+
     return () => {
       window.removeEventListener('storage', handleLanguageChange);
     };
@@ -212,9 +212,9 @@ export default function FileUploader() {
       <div className="canvas-navigation">
         <div className="nav-arrow-left">
           <span className="nav-letter">{prevLetter}</span>
-          <button 
+          <button
             className="nav-arrow-button"
-            disabled={isLoading || !prevLetter} 
+            disabled={isLoading || !prevLetter}
             onClick={() => handleArrowClick("prev")}
           >
             <img
@@ -226,9 +226,9 @@ export default function FileUploader() {
         </div>
         <div className="canvas-main-letter">{letter}</div>
         <div className="nav-arrow-right">
-          <button 
+          <button
             className="nav-arrow-button"
-            disabled={isLoading || !nextLetter} 
+            disabled={isLoading || !nextLetter}
             onClick={() => handleArrowClick("next")}
           >
             <img
@@ -248,8 +248,8 @@ export default function FileUploader() {
               <Trans i18nKey="comparePage.ethalonLetter.title">Еталонна буква</Trans>
             </h2>
             <div className="ethalon-letter-container">
-              <img 
-                src={letterImage} 
+              <img
+                src={letterImage}
                 alt={`Letter ${letter}`}
                 className="ethalon-letter-image"
               />
@@ -281,8 +281,8 @@ export default function FileUploader() {
           {ethalonFile && (
             <>
               <div className="uploaded-file-preview">
-                <img 
-                  src={ethalonFile} 
+                <img
+                  src={ethalonFile}
                   alt="Uploaded file"
                   className="uploaded-file-image"
                 />

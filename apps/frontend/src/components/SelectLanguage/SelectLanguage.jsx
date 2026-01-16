@@ -57,14 +57,14 @@ export default function SelectLanguage() {
     sketchOrNot = "free";
   }
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const letters = await getLetters(selectedLanguage);
-      setCurrentLetters(letters);
-      setLoading(false);
-    };
-    fetchData();
-  }, [selectedLanguage]);
+    useEffect(() => {
+      const fetchData = async () => {
+        const letters = await getLetters(selectedLanguage);
+        setCurrentLetters(letters);
+        setLoading(false);
+      };
+      fetchData();
+    }, [selectedLanguage]);
 
   useEffect(() => {
     const fetchResults = async () => {
@@ -105,17 +105,17 @@ export default function SelectLanguage() {
     }
   };
 
-  function handleLanguageChange(e) {
-    setSelectedLanguage(() => {
-      return e.target.value;
-    });
-  }
+    function handleLanguageChange(e) {
+      setSelectedLanguage(() => {
+        return e.target.value;
+      });
+    }
 
-  const selectedLangLabel = {
-    ua: <Trans i18nKey="SelectLanguagePage.options.ua">Українська</Trans>,
-    en: <Trans i18nKey="SelectLanguagePage.options.en">Англійська</Trans>,
-    jp: <Trans i18nKey="SelectLanguagePage.options.jp">Японська</Trans>,
-  }[selectedLanguage];
+    const selectedLangLabel = {
+      ua: <Trans i18nKey="SelectLanguagePage.options.ua">Українська</Trans>,
+      en: <Trans i18nKey="SelectLanguagePage.options.en">Англійська</Trans>,
+      jp: <Trans i18nKey="SelectLanguagePage.options.jp">Японська</Trans>,
+    }[selectedLanguage];
 
   return (
     <section className="select-language">

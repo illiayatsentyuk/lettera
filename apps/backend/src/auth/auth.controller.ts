@@ -12,7 +12,7 @@ import { Tokens } from './types';
 
 @Controller('')
 export class AuthController {
-  constructor(private authService: AuthService) {}
+  constructor(private authService: AuthService) { }
 
   @Get('/me')
   getMe() {
