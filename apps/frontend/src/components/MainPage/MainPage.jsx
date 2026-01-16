@@ -78,6 +78,7 @@ export default function Main() {
           >
             <Trans i18nKey="MainPage.startButton">Почати навчання →</Trans>
           </button>
+          
         </div>
 
 
