@@ -304,6 +304,7 @@ export default function Canvas() {
       });
   }
 
+  
   return (
     <section className="canvas-container">
       {(isLoading || loading) && (
