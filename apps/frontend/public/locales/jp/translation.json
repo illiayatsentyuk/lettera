@@ -15,7 +15,7 @@
     }
   },
   "MainPage": {
-    "title": "Lettera",
+    "title": "Pysanka",
     "slogan": "文字の書き方を教えるアプリ",
     "chooseMode": "モードを選択",
     "startButton": "学習を始める →",
@@ -107,7 +107,7 @@
     "downloadPdf": "結果をダウンロード (PDF)"
   },
   "welcomeModal": {
-    "title": "Letteraへようこそ！",
+    "title": "Pysankaへようこそ！",
     "description": "アプリへの完全なアクセスには、サインインまたは登録してください。",
     "loginButton": "サインイン",
     "laterButton": "後で"

@@ -15,7 +15,7 @@
     }
   },
   "MainPage": {
-    "title": "Lettera",
+    "title": "Pysanka",
     "slogan": "An app that teaches you to write letters",
     "chooseMode": "Choose a mode",
     "startButton": "Start Learning →",
@@ -108,7 +108,7 @@
     "downloadPdf": "Download results (PDF)"
   },
   "welcomeModal": {
-    "title": "Welcome to Lettera!",
+    "title": "Welcome to Pysanka!",
     "description": "For full access to the app, please sign in or register.",
     "loginButton": "Sign In",
     "laterButton": "Later"

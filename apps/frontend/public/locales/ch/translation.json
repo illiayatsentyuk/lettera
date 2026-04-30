@@ -15,7 +15,7 @@
     }
   },
   "MainPage": {
-    "title": "Lettera",
+    "title": "Pysanka",
     "slogan": "教你写字母的应用程序",
     "chooseMode": "选择模式",
     "startButton": "开始学习 →",
@@ -107,7 +107,7 @@
     "downloadPdf": "下载结果 (PDF)"
   },
   "welcomeModal": {
-    "title": "欢迎来到 Lettera！",
+    "title": "欢迎来到 Pysanka！",
     "description": "要完全访问应用程序，请登录或注册。",
     "loginButton": "登录",
     "laterButton": "稍后"

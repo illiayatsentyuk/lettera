@@ -15,7 +15,7 @@
     }
   },
   "MainPage": {
-    "title": "Lettera",
+    "title": "Pysanka",
     "slogan": "Застосунок, що вчить писати літери",
     "chooseMode": "Оберіть режим",
     "startButton": "Почати навчання →",
@@ -108,7 +108,7 @@
     "downloadPdf": "Завантажити результати (PDF)"
   },
   "welcomeModal": {
-    "title": "Ласкаво просимо до Lettera!",
+    "title": "Ласкаво просимо до Pysanka!",
     "description": "Для повноцінного використання додатку, будь ласка, увійдіть в систему або зареєструйтеся.",
     "loginButton": "Увійти",
     "laterButton": "Пізніше"

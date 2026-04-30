@@ -15,7 +15,7 @@
     }
   },
   "MainPage": {
-    "title": "Lettera",
+    "title": "Pysanka",
     "slogan": "O aplicație care te învață să scrii litere",
     "chooseMode": "Alege un mod",
     "startButton": "Începe învățarea →",
@@ -107,7 +107,7 @@
     "downloadPdf": "Descarcă rezultatele (PDF)"
   },
   "welcomeModal": {
-    "title": "Bun venit la Lettera!",
+    "title": "Bun venit la Pysanka!",
     "description": "Pentru acces complet la aplicație, te rugăm să te conectezi sau să te înregistrezi.",
     "loginButton": "Conectare",
     "laterButton": "Mai târziu"

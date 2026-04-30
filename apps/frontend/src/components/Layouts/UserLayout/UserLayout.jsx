@@ -47,7 +47,7 @@ export default function UserLayout() {
     <main>
       <nav className="navbar">
         <Link className="navbar-logo" to="/">
-          Lettera
+          {t("MainPage.title")}
         </Link>
 
         <ul className="nav-links" id="nav-links" ref={navLinksRef}>
